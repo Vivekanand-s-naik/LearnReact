@@ -43,7 +43,7 @@ function App() {
       </header>
       <section className="relative gap-y-24 grid grid-cols-1 text-center gap-12 text-2xl pb-4 max-w-[90%] mx-auto md:grid-cols-2 items-center pt-40 lg:pt-50">
         <div className="relative w-full h-full object-cover md:order-3 rounded-4xl max-w-[90%] m-auto flex justify-center items-center overflow-hidden">
-          <div className="rounded-4xl animate-spin transition-all [animation-duration:4.1s] absolute h-[1024px] w-[1024px] bg-conic-180 from-cyan-400 via-fuchsia-500 to-blue-700"></div>
+          <div className="rounded-4xl animate-spin transition-all [animation-duration:4.1s] absolute h-256 w-5xl bg-conic-180 from-cyan-400 via-fuchsia-500 to-blue-700"></div>
           <img src="/hero.svg" className="rounded-4xl z-10 relative h-[98%] w-[98%] object-cover shadow-transparent shadow-2xl border-2 border-black" />
         </div>
 
