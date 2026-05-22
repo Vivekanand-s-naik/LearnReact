@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-blue: oklch(0.216 0.09471 275.052);
+  }
+
+@layer base {
+  h1, h2 {
+    font-weight: 800;
+  }
+}
