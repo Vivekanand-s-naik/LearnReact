@@ -1,4 +1,5 @@
 import { memo } from "react";
+
 function Navbar({ item, setItem }) {
   console.log("Child Element Renders");
   return (
