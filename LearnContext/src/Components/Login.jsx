@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import UserContext from "../Context/UserContext";
 import { useContext, useState } from "react";
 
@@ -5,7 +6,7 @@ function Login(){
     const [name, setName] = useState('');
     const [password, setPassword] = useState('')
     const {setData} = useContext(UserContext);
-
+    const Navigate = useNavigate()
     const handleNameChange = (e)=>{
         setName(e.target.value);
     }
@@ -13,8 +14,9 @@ function Login(){
         setPassword(e.target.value);
     }
     const handleClick = (e)=>{
-        e.preventDefault()
+        e.preventDefault();
         setData({name:name, password:password});
+        Navigate('/user');
     }
     return (
         <div>
